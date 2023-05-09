@@ -1,0 +1,85 @@
+{
+    "comments": "json doesn't support comments",
+    "experimenter": {
+        "name": "Jeffrey Xing",
+        "email": "j8xing@ucsd.edu"
+    },
+    "subject": "B9999",
+    "panel_name": "magpi01",
+    "experiment_path": "/home/bird/opdat/B9999",
+    "stim_path": "/home/bird/opdat/B9999/stimuli",
+    "name": "Tempo modulation detection",
+    "description": "discriminate between isochrony and tempo-modulated stimuli",
+    "debug": true,
+    "log_handlers": [],
+    "stims": {},
+    "left_stims": {
+        "0": "motif58_1.0.wav",
+        "1": "motif24_1.0.wav",
+        "2": "motif23_1.0.wav",
+        "3": "motif51_1.0.wav",
+        "4": "motif56_1.0.wav",
+        "5": "motif63_1.0.wav",
+        "6": "motif18_1.0.wav",
+        "7": "motif16_1.0.wav"
+    },
+    "right_stims": {
+        "0": "motif58_0.0.wav",
+        "1": "motif24_0.0.wav",
+        "2": "motif23_0.0.wav",
+        "3": "motif51_0.0.wav",
+        "4": "motif56_0.0.wav",
+        "5": "motif63_0.0.wav",
+        "6": "motif18_0.0.wav",
+        "7": "motif16_0.0.wav"
+    },
+    "current_available_motifs": 9,
+    "classes": {
+        "L": {
+            "reward_value": 2.0,
+            "punish_value": 20.0,
+            "component": "left"
+        },
+        "R": {
+            "reward_value": 2.0,
+            "punish_value": 20.0,
+            "component": "right"
+        }
+    },
+    "block_design": {
+        "blocks": {
+            "default": {
+                "queue": "block",
+                "condition": []
+            }
+        },
+        "order": [
+            "default"
+        ]
+    },
+    "category_condition": [
+        {
+            "class": "L",
+            "stim_name": "1"
+        },
+        {
+            "class": "R",
+            "stim_name": "0"
+        }
+    ],
+    "reinforcement": {
+        "schedule": "fixed_ratio",
+        "ratio": 1,
+        "secondary": true
+    },
+    "correction_trials": true,
+    "response_win": 5.0,
+    "intertrial_min": 5.0,
+    "forced_choice": false,
+    "light_schedule": "sun",
+    "distribution_type": "amodal",
+    "trial_condition": "equal",
+    "inject_test": true,
+    "sr": 48000,
+    "shape": false
+}

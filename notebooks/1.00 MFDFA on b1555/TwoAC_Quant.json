@@ -1,0 +1,452 @@
+{
+    "comments": "json doesn't support comments",
+    "experimenter": {
+        "name": "Jeffrey Xing",
+        "email": "j8xing@ucsd.edu"
+    },
+    "subject": "B9999",
+    "panel_name": "magpi01",
+    "experiment_path": "/home/bird/opdat/B9999",
+    "stim_path": "/home/bird/opdat/B9999/stimuli",
+    "name": "Quantization Detection Task",
+    "description": "Discriminate between empirical synthesis and quantized synthesis",
+    "debug": true,
+    "log_handlers": [],
+    "stims": {},
+    "test_conds": {},
+    "current_available_motifs": 1,
+    "classes": {
+        "L": {
+            "reward_value": 2.0,
+            "punish_value": 10.0,
+            "component": "left"
+        },
+        "R": {
+            "reward_value": 2.0,
+            "punish_value": 10.0,
+            "component": "right"
+        }
+    },
+    "block_design": {
+        "blocks": {
+            "default": {
+                "queue": "block",
+                "conditions": []
+            }
+        },
+        "order": [
+            "default"
+        ]
+    },
+    "category_conditions": [
+        {
+            "class": "L",
+            "stim_name": "1"
+        },
+        {
+            "class": "R",
+            "stim_name": "0"
+        }
+    ],
+    "reinforcement": {
+        "schedule": "fixed_ratio",
+        "ratio": 1,
+        "secondary": true,
+        "test": "random"
+    },
+    "correction_trials": true,
+    "response_win": 5.0,
+    "intertrial_min": 5.0,
+    "forced_choice": false,
+    "light_schedule": "sun",
+    "distribution_type": "amodal",
+    "trial_condition": "equal",
+    "inject_test": true,
+    "sr": 48000,
+    "shape": false,
+    "test_conditions": [
+        {
+            "class": "L",
+            "stim_name": "empirical_0_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_1_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_2_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_3_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_4_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_5_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_6_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_7_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_8_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_9_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_10_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_11_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_12_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_13_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_14_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_15_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_16_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_17_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_18_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_19_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_20_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_21_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_22_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_23_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_24_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_25_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_26_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_27_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_28_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_29_test.wav"
+        },
+        {
+            "class": "L",
+            "stim_name": "empirical_30_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_0_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_1_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_2_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_3_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_4_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_5_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_6_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_7_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_8_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_9_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_10_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_11_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_12_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_13_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_14_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_15_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_16_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_17_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_18_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_19_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_20_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_21_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_22_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_23_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_24_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_25_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_26_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_27_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_28_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_29_test.wav"
+        },
+        {
+            "class": "R",
+            "stim_name": "quantized_30_test.wav"
+        }
+    ],
+    "force_test_threshold": 10,
+    "n_test_motifs": 0,
+    "test_rate": 0.5,
+    "left_stims": {
+        "0": "empirical_0_training.wav",
+        "1": "empirical_1_training.wav",
+        "2": "empirical_2_training.wav",
+        "3": "empirical_3_training.wav",
+        "4": "empirical_4_training.wav",
+        "5": "empirical_5_training.wav",
+        "6": "empirical_6_training.wav",
+        "7": "empirical_7_training.wav",
+        "8": "empirical_8_training.wav",
+        "9": "empirical_9_training.wav",
+        "10": "empirical_10_training.wav",
+        "11": "empirical_11_training.wav",
+        "12": "empirical_12_training.wav",
+        "13": "empirical_13_training.wav",
+        "14": "empirical_14_training.wav",
+        "15": "empirical_15_training.wav",
+        "16": "empirical_16_training.wav",
+        "17": "empirical_17_training.wav",
+        "18": "empirical_18_training.wav",
+        "19": "empirical_19_training.wav",
+        "20": "empirical_20_training.wav",
+        "21": "empirical_21_training.wav",
+        "22": "empirical_22_training.wav",
+        "23": "empirical_23_training.wav",
+        "24": "empirical_24_training.wav",
+        "25": "empirical_25_training.wav",
+        "26": "empirical_26_training.wav",
+        "27": "empirical_27_training.wav",
+        "28": "empirical_28_training.wav",
+        "29": "empirical_29_training.wav",
+        "30": "empirical_30_training.wav",
+        "31": "empirical_31_training.wav",
+        "32": "empirical_32_training.wav",
+        "33": "empirical_33_training.wav",
+        "34": "empirical_34_training.wav",
+        "35": "empirical_35_training.wav",
+        "36": "empirical_36_training.wav",
+        "37": "empirical_37_training.wav",
+        "38": "empirical_38_training.wav",
+        "39": "empirical_39_training.wav",
+        "40": "empirical_40_training.wav",
+        "41": "empirical_41_training.wav",
+        "42": "empirical_42_training.wav",
+        "43": "empirical_43_training.wav",
+        "44": "empirical_44_training.wav",
+        "45": "empirical_45_training.wav",
+        "46": "empirical_46_training.wav",
+        "47": "empirical_47_training.wav",
+        "48": "empirical_48_training.wav",
+        "49": "empirical_49_training.wav",
+        "50": "empirical_50_training.wav",
+        "51": "empirical_51_training.wav",
+        "52": "empirical_52_training.wav",
+        "53": "empirical_53_training.wav",
+        "54": "empirical_54_training.wav",
+        "55": "empirical_55_training.wav",
+        "56": "empirical_56_training.wav",
+        "57": "empirical_57_training.wav",
+        "58": "empirical_58_training.wav",
+        "59": "empirical_59_training.wav",
+        "60": "empirical_60_training.wav",
+        "61": "empirical_61_training.wav",
+        "62": "empirical_62_training.wav",
+        "63": "empirical_63_training.wav"
+    },
+    "right_stims": {
+        "0": "quantized_0_training.wav",
+        "1": "quantized_1_training.wav",
+        "2": "quantized_2_training.wav",
+        "3": "quantized_3_training.wav",
+        "4": "quantized_4_training.wav",
+        "5": "quantized_5_training.wav",
+        "6": "quantized_6_training.wav",
+        "7": "quantized_7_training.wav",
+        "8": "quantized_8_training.wav",
+        "9": "quantized_9_training.wav",
+        "10": "quantized_10_training.wav",
+        "11": "quantized_11_training.wav",
+        "12": "quantized_12_training.wav",
+        "13": "quantized_13_training.wav",
+        "14": "quantized_14_training.wav",
+        "15": "quantized_15_training.wav",
+        "16": "quantized_16_training.wav",
+        "17": "quantized_17_training.wav",
+        "18": "quantized_18_training.wav",
+        "19": "quantized_19_training.wav",
+        "20": "quantized_20_training.wav",
+        "21": "quantized_21_training.wav",
+        "22": "quantized_22_training.wav",
+        "23": "quantized_23_training.wav",
+        "24": "quantized_24_training.wav",
+        "25": "quantized_25_training.wav",
+        "26": "quantized_26_training.wav",
+        "27": "quantized_27_training.wav",
+        "28": "quantized_28_training.wav",
+        "29": "quantized_29_training.wav",
+        "30": "quantized_30_training.wav",
+        "31": "quantized_31_training.wav",
+        "32": "quantized_32_training.wav",
+        "33": "quantized_33_training.wav",
+        "34": "quantized_34_training.wav",
+        "35": "quantized_35_training.wav",
+        "36": "quantized_36_training.wav",
+        "37": "quantized_37_training.wav",
+        "38": "quantized_38_training.wav",
+        "39": "quantized_39_training.wav",
+        "40": "quantized_40_training.wav",
+        "41": "quantized_41_training.wav",
+        "42": "quantized_42_training.wav",
+        "43": "quantized_43_training.wav",
+        "44": "quantized_44_training.wav",
+        "45": "quantized_45_training.wav",
+        "46": "quantized_46_training.wav",
+        "47": "quantized_47_training.wav",
+        "48": "quantized_48_training.wav",
+        "49": "quantized_49_training.wav",
+        "50": "quantized_50_training.wav",
+        "51": "quantized_51_training.wav",
+        "52": "quantized_52_training.wav",
+        "53": "quantized_53_training.wav",
+        "54": "quantized_54_training.wav",
+        "55": "quantized_55_training.wav",
+        "56": "quantized_56_training.wav",
+        "57": "quantized_57_training.wav",
+        "58": "quantized_58_training.wav",
+        "59": "quantized_59_training.wav",
+        "60": "quantized_60_training.wav",
+        "61": "quantized_61_training.wav",
+        "62": "quantized_62_training.wav",
+        "63": "quantized_63_training.wav"
+    }
+}
