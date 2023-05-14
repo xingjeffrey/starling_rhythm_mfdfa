@@ -10,6 +10,7 @@ import pathlib2
 def tmf(
     waveform, 
     amp_env_sr, 
+    bypass_amp_env = False,
     win_type = 'boxcar', 
     res_type = 'linear',
     stds = 1,
@@ -37,19 +38,24 @@ def tmf(
     if type(waveform) == pathlib2.PosixPath:
         sr, waveform = scipy.io.wavfile.read(waveform)
     
-    ## transform into logscaled amplitude envelope
-    amp_env = extract_amp_env(
-        waveform, 
-        target_sr = amp_env_sr, 
-        win_type = win_type,
-        res_type = res_type,
-        stds = stds, 
-        buffer = buffer,
-        spl = spl,
-        compact = compact,
-        hilbert_artifacts = hilbert_artifacts,
-        reduce_noise = reduce_noise
-    )
+    if bypass_amp_env == False:
+        ## transform into logscaled amplitude envelope
+        amp_env = extract_amp_env(
+            waveform, 
+            sr = sr,
+            target_sr = amp_env_sr, 
+            win_type = win_type,
+            res_type = res_type,
+            stds = stds, 
+            buffer = buffer,
+            spl = spl,
+            compact = compact,
+            hilbert_artifacts = hilbert_artifacts,
+            reduce_noise = reduce_noise
+        )
+    else:
+        ## if bypassing amp_env calculation, assume waveform to be amp_env
+        amp_env = waveform
     
     ## calculate empirical hurst_expos
     h_expos = hurst_expo(
@@ -69,7 +75,7 @@ def tmf(
         ns = ns, 
         verbose = verbose, 
         maxiter = maxiter, 
-        sorttype = 'quicksort'
+        sorttype = sorttype
     )
     
     ## for each surrogate, find their MF-range

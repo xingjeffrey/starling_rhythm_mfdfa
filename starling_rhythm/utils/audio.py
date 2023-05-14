@@ -16,13 +16,14 @@ def int16_to_float32(data):
 def extract_amp_env(
     data, 
     target_sr, 
+    sr = 48000,
     win_type = 'boxcar', 
     res_type = 'linear',
     stds = 1,
     buffer = 100,
     spl = True,
     compact = False,
-    hilbert_artifacts = False,
+    hilbert_artifacts = True,
     reduce_noise = True
 ):
     '''
@@ -31,7 +32,6 @@ def extract_amp_env(
     ## Output: df_entry
     '''
     
-    sr = 48000
     data = int16_to_float32(data)
     if reduce_noise:
         data = nr.reduce_noise(y=data, sr=sr)
