@@ -35,7 +35,10 @@ def test_filter(behav_data, accuracy_threshold = 0.8, past_baseline_trials = 100
         for i, trial in tqdm(test_trials.iterrows(), desc = 'Iterating through test trials for subject ' + str(subj)):
 
             ## find the previous baseline_trials
-            baseline_bucket = baseline_trials.loc[:i].iloc[-past_baseline_trials:]
+            baseline_filtered = baseline_trials[
+                (baseline_trials.pair_indices == trial.pair_indices)
+            ]
+            baseline_bucket = baseline_filtered.loc[:i].iloc[-past_baseline_trials:]
             training_accuracy = np.mean(baseline_bucket.correct)
 
             ## if training accuracy exceed threshold, append test_trial index, and 
